@@ -1,0 +1,14 @@
+{
+  "name": "chewch",
+  "version": "1.0.0",
+  "description": "Added mainly to compile SASS and bootstrap SASS",
+  "scripts": {
+    "build": "node-sass scss -o css",
+    "watch": "node-sass --watch scss -o css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
