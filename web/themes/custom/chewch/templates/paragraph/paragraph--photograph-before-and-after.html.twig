@@ -38,6 +38,7 @@
  * @ingroup themeable
  */
 #}
+{#{{ attach_library('chewch/twentytwenty') }}#}
 {%
   set classes = [
     'paragraph',
@@ -49,7 +50,7 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div id="image-before-after">
+      <div id="image-before-after" class="twentytwenty-container">
         {{ content.field_image_secondary }}
         {{ content.field_image_main }}
       </div>

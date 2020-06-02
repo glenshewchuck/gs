@@ -21,9 +21,8 @@ function chewch_theme_suggestions_page_alter(array &$suggestions, array $variabl
  * Implements hook_preprocess_node
  */
 function chewch_preprocess_node(&$variables) {
-  // Getting the node creation time stamp from the node object.
+  // Change the format of the submitted date on node pages.
   $date = $variables['node']->getCreatedTime();
-  // Here you can use drupal's format_date() function, or some custom PHP date formatting.
   $variables['date'] = \Drupal::service('date.formatter')->format($date, 'chewch_node_date');
 }
 
@@ -31,7 +30,6 @@ function chewch_preprocess_node(&$variables) {
  * Implements hook_preprocess_image().
  */
 function chewch_preprocess_image(&$variables) {
-
   // When using the user_image_compact that is used on node displays
   // add the class to make the image a circle.
   if ($variables['style_name'] == 'user_image_compact') {
