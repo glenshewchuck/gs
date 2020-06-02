@@ -752,17 +752,9 @@ $settings['entity_update_backup'] = TRUE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
+
+#$settings['config_sync_directory'] = 'sites/default/files/config_E1RSqRfyl60UkDmEMnXEvYSSY5Ubj-j8mT9hkOJHCTdMYeoylwi63C_X0r32s7ssbIuq2PXsQQ/sync';
+
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
-$databases['default']['default'] = array (
-  'database' => 'gs',
-  'username' => 'gs',
-  'password' => 'gs',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['config_sync_directory'] = 'sites/default/files/config_E1RSqRfyl60UkDmEMnXEvYSSY5Ubj-j8mT9hkOJHCTdMYeoylwi63C_X0r32s7ssbIuq2PXsQQ/sync';
