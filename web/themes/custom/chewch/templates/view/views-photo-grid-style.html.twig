@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Template for the Photo Grid style.
+ *
+ * - $items contains an array of images to display.
+ *
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+<div class="views-photo-grid-container">
+  {% for item in items %}
+    <div class="views-photo-grid-item">
+      <div class="chewch poop">
+        {{  item }}
+{#        <div class="chewch2">#}
+{#         This is a test#}
+{#        </div>#}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+

@@ -1,0 +1,6 @@
+<?php
+
+function glenshewchuck_preprocess_page($variables) {
+  $x = 1;
+}
+

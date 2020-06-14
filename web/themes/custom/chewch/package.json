@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Added mainly to compile SASS and bootstrap SASS",
   "scripts": {
-    "build": "node-sass scss -o css",
-    "watch": "node-sass --watch scss -o css"
+    "build": "node-sass --source-comments --error-bell --source-map css scss -o css",
+    "watch": "node-sass --source-comments --error-bell --source-map css --watch scss -o css"
   },
   "author": "",
   "license": "ISC",

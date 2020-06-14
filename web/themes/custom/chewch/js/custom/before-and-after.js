@@ -14,6 +14,6 @@ jQuery(function(){
 
   // Now we must move the photo information because it gets hidden under the
   // photo that is now absolutely positioned with no overflow.
-  var bootstrapPanel = jQuery('#bootstrap-panel').detach();
+  var bootstrapPanel = jQuery('.twentytwenty-container #bootstrap-panel').detach();
   bootstrapPanel.appendTo(jQuery('#container-image-before-after'));
 });

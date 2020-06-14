@@ -50,3 +50,6 @@ web/modules/contrib
 # Bootstrap - themes bootswatch
 web/themes/custom/chewch/bootswatch
 
+# Backup and Migrate backups (should be handled above but just in case)
+/web/sites/default/files/private/backup_migrate
+

@@ -1,15 +1,18 @@
 
 twentytwenty:
   js:
-    js/jquery.twentytwenty.js: {}
-    js/jquery.event.move.js: {}
-    js/before-and-after.js: {}
+    js/contrib/twentytwenty/jquery.twentytwenty.js: {}
+    js/contrib/twentytwenty/jquery.event.move.js: {}
+    js/custom/before-and-after.js: {}
   css:
     theme:
-      css/twentytwenty.css: {}
+      css/contrib/twentytwenty/twentytwenty.css: {}
   dependencies:
     - core/jquery
 
+masonry:
+  js:
+    js/contrib/masonry/masonry.pkgd.min.js: {}
 
 framework:
   css:

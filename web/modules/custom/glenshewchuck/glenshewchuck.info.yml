@@ -1,0 +1,6 @@
+type: module
+name: Glen Shewchuck
+description: 'Various custom functions for the Glen Shewchuck photography website'
+package: Custom
+core: 8.x
+
